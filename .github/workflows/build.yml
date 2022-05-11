@@ -31,4 +31,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64
           push: true
-          tags: artemshestakov/oraclelinux-8-docker:latest
+          tags: artemshestakov/almalinux-8-docker:latest

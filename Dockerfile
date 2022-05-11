@@ -1,4 +1,4 @@
-FROM oraclelinux:8
+FROM almalinux:8
 LABEL maintainer="Artem Shestakov"
 ENV container=docker
 
@@ -18,9 +18,9 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 # Install requirements.
 RUN yum -y install rpm dnf-plugins-core \
  && yum -y update \
- && yum -y config-manager --set-enabled ol8_codeready_builder \
+ && yum -y config-manager --set-enabled powertools \
  && yum -y install \
-      oracle-epel-release-el8 \
+      epel-release \
       initscripts \
       sudo \
       which \
