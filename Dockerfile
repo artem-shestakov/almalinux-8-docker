@@ -30,6 +30,8 @@ RUN yum -y install rpm dnf-plugins-core \
       python3-pip \
       python3-pyyaml \
       NetworkManager \
+      iproute \
+      ifconfig\
  && yum clean all
 
 # Upgrade pip to latest version.
