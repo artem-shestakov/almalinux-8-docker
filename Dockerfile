@@ -32,6 +32,8 @@ RUN yum -y install rpm dnf-plugins-core \
       NetworkManager \
       iproute \
       net-tools \
+      glibc-locale-source \
+      glibc-langpack-en \
  && yum clean all
 
 # Upgrade pip to latest version.
