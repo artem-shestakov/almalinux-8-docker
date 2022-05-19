@@ -26,9 +26,9 @@ RUN yum -y install rpm dnf-plugins-core \
       which \
       hostname \
       libyaml-devel \
-      python3 \
-      python3-pip \
-      python3-pyyaml \
+      python39 \
+      python39-pip \
+      python39-pyyaml \
       NetworkManager \
       iproute \
       net-tools \
